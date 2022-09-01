@@ -21,5 +21,7 @@ public class SiimUDuck {
         d2.display();
         d2.performQuack();
         d2.performFly();
+        d2.setFlyBehavior(new FlyRocketPowered());
+        d2.performFly();
     }
 }
