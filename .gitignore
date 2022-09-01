@@ -4,3 +4,10 @@ StrategyPattern/.idea/misc.xml
 StrategyPattern/.idea/modules.xml
 StrategyPattern/.idea/uiDesigner.xml
 StrategyPattern/.idea/vcs.xml
+TemplatePattern/Starbuzz-Barista-Training.iml
+TemplatePattern/out/production/Starbuzz-Barista-Training/main/StarbuzzCafe.class
+*.class
+*.xml
+TemplatePattern/.idea/.name
+*.class
+StrategyPattern/out/production/StrategyPattern/main/FlyRocketPowered.class
