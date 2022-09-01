@@ -1,10 +1,17 @@
 package main;
 
-public class Duck {
+public abstract class Duck {
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
 
-    public void quackBehavior(){
+    public abstract void display();
+    public void performFly(){
+        flyBehavior.fly();
+    }
+    public void performQuack(){
         quackBehavior.quack();
+    }
+    public void swim(){
+        System.out.println("Duck is Swimming or is It Floating?");
     }
 }

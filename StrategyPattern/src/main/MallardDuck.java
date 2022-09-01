@@ -6,6 +6,6 @@ public class MallardDuck extends Duck{
         flyBehavior = new FlyWithWings();
     }
     public void display(){
-        System.out.println("Rendered a Mallard Duck.");
+        System.out.println("I can see a Mallard Duck.");
     }
 }
