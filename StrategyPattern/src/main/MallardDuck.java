@@ -1,4 +1,5 @@
 package main;
+//DuckType
 
 public class MallardDuck extends Duck{
     public MallardDuck(){

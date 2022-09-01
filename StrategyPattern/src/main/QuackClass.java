@@ -1,4 +1,5 @@
 package main;
+//Non-Identical Behavior Type
 
 public class QuackClass implements QuackBehavior{
     @Override

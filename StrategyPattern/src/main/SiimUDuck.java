@@ -1,4 +1,5 @@
 package main;
+//Driver Code
 
 public class SiimUDuck {
     public static void main(String[] args) {
@@ -6,5 +7,19 @@ public class SiimUDuck {
         d0.display();
         d0.performQuack();
         d0.performFly();
+
+        System.out.println("=========================================================================================");
+
+        DecoyDuck d1 = new DecoyDuck();
+        d1.display();
+        d1.performQuack();
+        d1.performFly();
+
+        System.out.println("=========================================================================================");
+
+        RubberDuck d2 = new RubberDuck();
+        d2.display();
+        d2.performQuack();
+        d2.performFly();
     }
 }

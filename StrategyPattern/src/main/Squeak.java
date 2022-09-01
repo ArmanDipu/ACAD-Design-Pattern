@@ -1,4 +1,5 @@
 package main;
+//Non-Identical Behavior Type1.
 
 public class Squeak implements QuackBehavior{
     @Override
