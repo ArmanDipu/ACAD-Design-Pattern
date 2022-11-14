@@ -1,4 +1,4 @@
-public class MallardDuck extends Duck implements Quackable{
+public class MallardDuck extends Duck {
     @Override
     void display(){
         System.out.println("This is an Mallard Duck.");

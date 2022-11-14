@@ -1,11 +1,13 @@
-public class Goose {
+public class Goose implements Honkable{
     void swim(){
         System.out.println("Goose is Swimming.");
     }
     void display(){
         System.out.println("This is a Goose.");
     }
-    void honk(){
-        System.out.println("Goose is Honking. ");
+
+    @Override
+    public void honk() {
+        System.out.println("Goose is Honking.");
     }
 }
