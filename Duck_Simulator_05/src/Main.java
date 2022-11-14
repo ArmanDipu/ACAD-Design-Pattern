@@ -32,13 +32,7 @@ public class Main {
         System.out.println("===== Task4 =====");
 
         AbstractFactory abstractFactory;
-        String duckType = "CountableAlabio";
-        if(duckType.startsWith("Countable")){
-            abstractFactory = new CountingDuckFactory();
-        }
-        else{
-            abstractFactory = new DuckFactory();
-        }
+        abstractFactory = new CountingDuckFactory();
         Duck duck2 = abstractFactory.createDuck("Alabio");
         duck2.display();
         duck2.swim();
