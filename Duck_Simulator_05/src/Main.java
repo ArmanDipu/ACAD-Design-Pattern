@@ -41,6 +41,7 @@ public class Main {
         duck3.quack();
         duck3.quack();
 
+        System.out.println();
         Duck[] ducks = new Duck[5];
         for(int i=0; i<5; i++){
             ducks[i] = (Duck) duckFactory.createDuck("Mallard");
@@ -50,5 +51,13 @@ public class Main {
         System.out.println("===== Task5 =====");
         FlockOfDucks flockOfDucks = new FlockOfDucks(ducks);
         flockOfDucks.quack();
+
+        System.out.println();
+        System.out.println("===== Task6 =====");
+        Subscriber subscriber = new Subscriber("Duck","Quack");
+        SubscribedDuck duck4 = new SubscribedDuck();
+        duck4.quackPublisherService.addSubscriber(subscriber);
+        duck4.quack();
+        duck4.quack();
     }
 }
