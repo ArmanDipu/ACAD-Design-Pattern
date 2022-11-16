@@ -31,18 +31,24 @@ public class Main {
         System.out.println();
         System.out.println("===== Task4 =====");
 
-        AbstractDuckFactory abstractDuckFactory = new DuckFactory();
-        Quackable duck2 = abstractDuckFactory.createDuck("Alabio");
+        AbstractDuckFactory duckFactory = new DuckFactory();
+        Quackable duck2 = duckFactory.createDuck("Alabio");
         duck2.quack();
 
-        AbstractDuckFactory abstractDuckFactory2 = new CountingDuckFactory();
-        Quackable duck3 = abstractDuckFactory2.createCountingDuck("Mallard");
+        AbstractDuckFactory countingDuckFactory = new CountingDuckFactory();
+        Quackable duck3 = countingDuckFactory.createCountingDuck("Mallard");
         duck3.quack();
         duck3.quack();
         duck3.quack();
+
+        Duck[] ducks = new Duck[5];
+        for(int i=0; i<5; i++){
+            ducks[i] = (Duck) duckFactory.createDuck("Mallard");
+        }
 
         System.out.println();
         System.out.println("===== Task5 =====");
-        
+        FlockOfDucks flockOfDucks = new FlockOfDucks(ducks);
+        flockOfDucks.quack();
     }
 }
