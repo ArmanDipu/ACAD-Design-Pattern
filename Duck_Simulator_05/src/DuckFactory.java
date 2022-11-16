@@ -1,14 +1,20 @@
-public class DuckFactory implements AbstractFactory{
+public class DuckFactory implements AbstractDuckFactory {
+
     @Override
-    public Duck createDuck(String duckType){
-        if (duckType == "Alabio"){
-            AlabioDuck alabioDuck = new AlabioDuck();
-            return alabioDuck;
+    public Quackable createDuck(String duckType) {
+        if (duckType.equals("Alabio")){
+            System.out.println("Creating Alabio Duck in Duck Factory.");
+            return new AlabioDuck();
         }
-        else if(duckType == "Mallard"){
-            MallardDuck mallardDuck = new MallardDuck();
-            return mallardDuck;
+        else if(duckType.equals("Mallard")){
+            System.out.println("Creating Mallard Duck in Duck Factory.");
+            return new MallardDuck();
         }
         else return null;
+    }
+
+    @Override
+    public Quackable createCountingDuck(String duckType) {
+        return null;
     }
 }

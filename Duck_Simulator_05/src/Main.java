@@ -31,13 +31,15 @@ public class Main {
         System.out.println();
         System.out.println("===== Task4 =====");
 
-        AbstractFactory abstractFactory;
-        abstractFactory = new CountingDuckFactory();
-        Duck duck2 = abstractFactory.createDuck("Alabio");
-        duck2.display();
-        duck2.swim();
+        AbstractDuckFactory abstractDuckFactory = new DuckFactory();
+        Quackable duck2 = abstractDuckFactory.createDuck("Alabio");
         duck2.quack();
-        duck2.quack();
+
+        AbstractDuckFactory abstractDuckFactory2 = new CountingDuckFactory();
+        Quackable duck3 = abstractDuckFactory2.createCountingDuck("Mallard");
+        duck3.quack();
+        duck3.quack();
+        duck3.quack();
 
         System.out.println();
         System.out.println("===== Task5 =====");
